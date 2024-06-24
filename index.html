@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./build.css">
+    <title>Call sphere Pro</title>
+    <link rel="icon" type="image/x-icon" href="./res/csp-logo.png">
+</head>
+
+<body class="bg-[#1b222d] text-white scroll-smooth text-sm lg:text-base">
+    <header>
+        <nav class="w-full flex flex-col gap-8 lg:flex-row justify-between px-16 py-8 items-center">
+            <div class="w-full lg:w-auto flex justify-between items-center">
+                <img src="logo.jpg" class="h-11" alt="logo">
+                <div id="tgbutton">
+                  
+                    
+                </div>
+            </div>
+            <div class="hidden w-full lg:w-auto lg:block mt-7 lg:mt-auto" id="navMenu">
+                <ul class="flex gap-8 flex-col lg:flex-row">
+                    <li>
+                        <a class="flex w-full justify-between" href="/">
+                            <span>Home</span>
+                            <img src="./res/nav.png" class="lg:hidden" alt="link-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex w-full justify-between" href="#about">
+                            <span>About Us</span>
+                            <img src="./res/nav.png" class="lg:hidden" alt="link-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex w-full justify-between" href="#servicess">
+                            <span>Services</span>
+                            <img src="./res/nav.png" class="lg:hidden" alt="link-icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex w-full justify-between" href="#contact">
+                            <span>Contact Us</span>
+                            <img src="./res/nav.png" class="lg:hidden" alt="link-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <script defer>
+            
+            const tgbutton = document.getElementById('tgbutton');
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            const cross = document.getElementById('cross');
+
+            tgbutton.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+                hamburger.classList.toggle('hidden');
+                cross.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (event) => {
+                const target = event.target;
+                if (!hamburger.contains(target) && !cross.contains(target)) {
+                    navMenu.classList.add('hidden');
+                    hamburger.classList.remove('hidden');
+                    cross.classList.add('hidden');
+                }
+            });
+
+        </script>
+
+        <section class="text-center p-4 py-[7.5rem]">
+            <h1 class="text-[#F8D454] max-w-[693px] m-auto font-semibold text-3xl lg:text-[2.688rem] p-4">
+                Unlock the Power of Data and Communication
+            </h1>
+            <p class="text-[#E0EFFE] max-w-[678px] m-auto lg:font-medium text-xl hidden lg:block">
+                Experience seamless data management, efficient dialer
+                solutions,<br />
+                and reliable VoIP services for your business.
+            </p>
+        </section>
+    </header>
+
+</body>
+
+</html>
+
+<main>
+    <article class="flex max-w-screen-lg flex-col lg:flex-row gap-4 m-auto items-center justify-evenly py-5 lg:py-6"
+        id="about">
+        <div class="w-3/4 lg:w-1/3">
+           
+        </div>
+        <div class="w-3/4 lg:w-1/2">
+            <h2 class="text-[#F8D454] font-medium text-2xl lg:text-[2.063rem] py-3">
+                Delivering Reliable Data, Dialer, and VoIP Solutions
+            </h2>
+            <p class="text-[#E0EFFE] text-justify">
+                Experience crystal-clear voice quality and
+                cost-effective communication solutions with our VoIP
+                service. Streamline your business operations and enhance
+                collaboration with advanced features and flexible
+                scalability.
+            </p>
+        </div>
+    </article>
+
+    <section id="servicess">
+        <h2 class="text-[#F8D454] font-[600] text-2xl lg:text-4xl text-center p-16">
+            Powerful Data Solutions for Your Business
+        </h2>
+
+        <div class="w-[90vw] max-w-5xl mx-auto flex flex-col lg:flex-row gap-6 justify-evenly">
+            <div
+                class="relative p-4 rounded-2xl shadow-sm flex flex-col w-full m-auto lg:w-[33%] max-w-[22rem] lg:min-h-[26.75rem] bg-[#232A38]">
+                <div class="flex-1">
+                    <h3 class="text-[2.063rem] font-semibold text-[#F8D454]">Data</h3>
+                    <ul role="list" class="mt-4 space-y-4">
+                        <li class="flex">
+                            <span class="">Countries we deal : <br>
+                                USA, Canada, Australia, UK (Scotland England)</span>
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="flex-shrink-0 w-6 h-6 text-white" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg><span class="ml-3">For various campaign's </span>
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="flex-shrink-0 w-6 h-6 text-white" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg><span class="ml-3">CDR</span>
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="flex-shrink-0 w-6 h-6 text-white" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg><span class="ml-3">with info (also with filter)
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <a class="bg-[#F8D454] text-[#1B222E] hover:bg-[#fcdd6bed] mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
+                    href="https://wa.me/923295929752" target="_blank">GET DATA</a>
+            </div>
+
+            <div
+                class="relative p-4 rounded-2xl shadow-sm flex flex-col w-full m-auto lg:w-[33%] max-w-[22rem] lg:min-h-[26.75rem] bg-[#232A38]">
+                <div class="flex-1">
+                    <h3 class="text-[2.063rem] font-semibold text-[#F8D454]">Dialer</h3>
+                    <ul role="list" class="mt-4 space-y-4">
+                        <li class="flex"><span>Predictive Dialer (Auto)</span>
+                        </li>
+                        <li class="flex"><span>Dialer Costs 120$</span>
+                        </li>
+                        <li class="flex"><span>Admin access (Control Panel Of Dialer)</span>
+                        </li>
+                        <li class="flex"><span>Customer Support (On Skype)
+                            </span>
+                        </li>
+                        <li class="flex"><span>15 Logins</span>
+                        </li>
+                    </ul>
+                </div>
+                <a class="bg-[#F8D454] text-[#1B222E] hover:bg-[#fcdd6bed] mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
+                href="https://wa.me/923295929752" target="_blank">GET DIALER</a>
+            </div>
+
+            <div
+                class="relative p-4 rounded-2xl shadow-sm flex flex-col w-full m-auto lg:w-[33%] max-w-[22rem] lg:min-h-[26.75rem] bg-[#232A38]">
+                <div class="flex-1">
+                    <h3 class="text-[2.063rem] font-semibold text-[#F8D454]">VOIP</h3>
+                    <ul role="list" class="mt-4 space-y-4">
+                        <li class="flex">
+                            <span>VOiP (Voice Over Internet Protocol) </span>
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="flex-shrink-0 w-6 h-6 text-white" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg><span class="ml-3"> 0.0080$ Per Min
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <a class="bg-[#F8D454] text-[#1B222E] hover:bg-[#fcdd6bed] mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
+                href="https://wa.me/923109221456" target="_blank">GET VOIP</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col lg:flex-row gap-6 max-w-screen-lg m-auto justify-between items-center py-16">
+        <div class="w-5/6 lg:w-1/2">
+            <h3 class="text-[#F8D454] font-semibold text-2xl lg:text-[2.063rem]">
+                Streamline your communication with our Dialer service
+            </h3>
+            <p class="font-medium text-[#E0EFFE] text-justify">
+                Our Dialer service provides a seamless and efficient way
+                to connect with your customers. With advanced features
+                and user-friendly interface, you can easily manage your
+                calls and improve productivity.
+            </p>
+        </div>
+        <div class=" w-5/6 lg:w-2/5 flex gap-4">
+            <div class="w-1/2 bg-[#232A38] p-2 rounded-md">
+                <h3 class="text-[#F8D454] font-semibold text-4xl">
+                    50%
+                </h3>
+                <p class="text-[#E0EFFE]">
+                    Increase call efficiency and productivity with our
+                    Dialer service.
+                </p>
+            </div>
+            <div class="w-1/2 bg-[#232A38] p-2 rounded-md">
+                <h3 class="text-[#F8D454] font-semibold text-4xl">
+                    50%
+                </h3>
+                <p class="text-[#E0EFFE]">
+                    Improve customer satisfaction and response rates
+                    with our Dialer service.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-5/6 lg:w-auto grid lg:grid-cols-2 max-w-screen-lg m-auto py-14" id="contact">
+        <section class="py-5 pr-7">
+            <section class="pb-10">
+                <h3 class="text-[#F8D454] text-[2.063rem] font-semibold py-6">Contact Us.</h3>
+                <p class="text-justify">It's never been easier to get in touch with Flex. Call us, use our live chat
+                    widget
+                    or email and we'll get back to you as soon as possible!</p>
+            </section>
+            <section class="hidden lg:grid grid-cols-2 mt-7">
+                    <div>
+                        <div class="bg-[#F8D454] h-11 rounded-full flex items-center justify-center" style="width: 44px;">
+                            <img src="./res/openmail.png" class="w-6" alt="">
+                        </div>
+                        <h4 class="text-xl lg:text-[1.625rem] font-semibold">Email</h4>
+                        <p class="text-base lg:text-xl">Callspherepro@gmail</p>
+                    </div>
+                    <div>                    
+                        <div class="bg-[#F8D454] h-11 rounded-full flex items-center justify-center" style="width: 44px;">
+                            <img src="./res/phone.png" class="w-6" alt="">
+                        </div>
+                        <h4 class="text-xl lg:text-[1.625rem] font-semibold">Phone</h4>
+                        <p class="text-base lg:text-xl">+923295929752</p>
+                    </div>
+                </section>
+        </section>
+        <section>
+            <form action="https://wa.me/923295929752" target="_blank"
+                class="w-full px-5 lg:px-8 py-7 bg-[#232A38] rounded-md [&>*>label]:font-semibold [&>*>label]:text-[1.188rem] [&>*]:p-2"
+                id="contactform">
+                <div class="w-full">
+                    <label for="email">Email</label>
+                    <input class="w-full rounded-md text-[#293344] px-3 py-2" type="email" name="email" id="email">
+                </div>
+                <div class="w-full">
+                    <label for="service">Service</label>
+                    <select class="w-full rounded-md text-[#293344] px-3 py-2" id="services" name="carlist"
+                        form="contactform">
+                        <option value="volvo">Dialer</option>
+                        <option value="saab">Data</option>
+                        <option value="opel">VoIP</option>
+                    </select>
+                </div>
+                <div class="w-full">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" class="resize-none w-full rounded-md text-[#293344] px-3 py-2"
+                        rows="7"></textarea>
+                </div>
+                <div class="w-full">
+                    <input
+                        class="w-full bg-[#F8D454] text-[#1B222E] py-2 rounded-md text-[1.188rem] font-semibold cursor-pointer"
+                        type="submit" value="Send">
+                </div>
+            </form>
+
+            <section class="lg:hidden grid grid-cols-2 mt-7 justify-items-center">
+                <div>
+                    <div class="bg-[#F8D454] h-11 rounded-full flex items-center justify-center" style="width: 44px;">
+                        <img src="./res/openmail.png" class="w-6" alt="">
+                    </div>
+                    <h4 class="text-xl lg:text-[1.625rem] font-semibold">Email</h4>
+                    <p class="text-base lg:text-xl">Callspherepro@gmail.com</p>
+                </div>
+                <div>                    
+                    <div class="bg-[#F8D454] h-11 rounded-full flex items-center justify-center" style="width: 44px;">
+                        <img src="./res/phone.png" class="w-6" alt="">
+                    </div>
+                    <h4 class="text-xl lg:text-[1.625rem] font-semibold">Phone</h4>
+                    <p class="text-base lg:text-xl">+92329-5929752</p>
+                </div>
+            </section>
+
+        </section>
+    </section>
+</main>
+
+
+
+<footer class="flex flex-col w-full items-center bg-[#232A38] [&>section]:py-2">
+    <section class="m-4">
+        <img src="two.jpg" class="h-11" alt="logo">
+    </section>
+    <section>
+        <ul class="flex gap-8">
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </section>
+    <section class="text-[#F8D454]">
+        <p>&copy; All rights reserved.</p>
+    </section>
+    
+    <p class="text-gray-300 mt-2 p-2">Made by Callspherepro Devs<a href="https://wa.me/923295929752"></a></p>
+
+</footer>
+</body>
+
+</html>
